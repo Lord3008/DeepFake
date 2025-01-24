@@ -11,7 +11,7 @@ st.write(
 
 @st.cache_resource
 def load_model():
-    return pipeline("image-classification", model="prithivMLmods/Deep-Fake-Detector-Model")
+    return pipeline("image-classification", model="prithivMLmods/Deep-Fake-Detector-Model",cache_dir="./hf_cache")
 
 pipe = load_model()
 
